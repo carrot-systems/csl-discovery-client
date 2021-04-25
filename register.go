@@ -43,5 +43,6 @@ func (client *DiscoveryClient) Register(appName string) error {
 	if !registerResponse.Status.Success {
 		return errors.New(registerResponse.Status.Message)
 	}
+	client.RegisteredName = appName
 	return nil
 }

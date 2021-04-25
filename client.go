@@ -6,6 +6,8 @@ type DiscoveryClientConfiguration struct {
 }
 
 type DiscoveryClient struct {
+	RegisteredName string
+
 	registered bool
 	server     *DiscoveryServerConfiguration
 	client     *DiscoveryClientConfiguration
